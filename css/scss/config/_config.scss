@@ -1,0 +1,28 @@
+/* ==========================================================================
+   General Vars
+   ========================================================================== */
+   
+$colorBG:					#cc9998;
+$color:						#f9c6f1;
+$colorLink:				#f9c6f1;
+$colorHover:			darken($colorBG, 10%);
+$colorSelect:			#ffd4b8;
+
+$stack1:					'inconsolataregular', 'Monaco', 'Arial', monospace;
+$stack2:					'serif';
+$fontSize:				13px;
+$lineHeight:			1;
+$fontFace:				$stack1;
+
+$h1Color:					$color;
+$h2Color:					$color;
+$h3Color:					$color;
+$h4Color:					$color;
+$h5Color:					$color;
+$h6Color:					$color;
+
+$figCaptionColor:	$color;
+
+/* ==========================================================================
+   Project Vars
+   ========================================================================== */

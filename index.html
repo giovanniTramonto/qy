@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" ng-app="qyApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>QY</title>
+  <meta name="description" content="QY – Musique Production – Leipzig West">
+  
+  <script type="text/javascript" src="./script/js/modernizr.custom.75339.js"></script>
+  
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="./css/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./css/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./css/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./css/icon/apple-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./css/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./css/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./css/icon/favicon-16x16.png">
+  <link rel="manifest" href="./css/icon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./css/icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+
+  <div class="page" ng-controller="qyCtrl">
+
+    <div class="teaser" ng-if="qyData.teaser.active">
+      <div class="teaser__frame">
+        <iframe width="560" height="315" ng-src="{{ qyData.teaser.src }}" src frameborder="0" allowfullscreen></iframe>
+        
+      </div>
+    </div>
+    
+    <h1 class="page__header"><a class="logo _write" href="./" role="banner">QY</a></h1>
+    
+    <div class="main section-list" role="main">
+    
+      <!-- section -->
+      <section class="section-list__item">
+        
+        <h2 class="section-list__item--title _write">Dates</h2>
+        
+        <ul class="section-list__item--list">
+        
+          <li class="section-list__item--list-item" ng-class="{ '_past' : !event.active }" ng-repeat="event in qyData.dates">
+            <span class="section-list__item--list-item__meta"><time datetime="{{ event.date }}" class="_write">{{ event.date }}</time> <span class="_write">{{event.title}}</span></span><span class="section-list__item--list-item__content _write">{{event.description}}</span>
+          </li>
+          
+        </ul>
+        
+      </section>
+      <!-- /section -->
+
+      <!-- section -->
+      <section class="section-list__item">
+        
+        <h2 class="section-list__item--title _write">Booking / Contact</h2>
+        
+        <ul class="section-list__item--list">
+          <li class="section-list__item--list-item" ng-repeat="booking in qyData.bookings"><a href="mailto:{{booking.address}}" class=" _write">{{booking.name}}</a></li>
+        </ul>
+        
+      </section>
+      <!-- /section -->
+      
+      <!-- section -->
+      <section class="section-list__item">
+        
+        <h2 class="section-list__item--title _write">Internet</h2>
+        
+        <ul class="section-list__item--list">
+          <li class="section-list__item--list-item" ng-repeat="connection in qyData.internet"><a href="{{connection.address}}" class="_write">{{connection.name}}</a></li>
+        </ul>
+        
+      </section>
+      <!-- /section -->
+      
+      <!-- section -->
+      <section class="section-list__item">
+        
+        <h2 class="section-list__item--title _write">Releases</h2>
+        
+        <ul class="section-list__item--list">
+          <li class="section-list__item--list-item" ng-repeat="release in qyData.releases">
+            <span class="section-list__item--list-item__meta"><time datetime="{{release.year}}" class="_write">{{release.year}}</time> <span class="_write">({{release.type}}) . {{release.title}}</span></span><span class="section-list__item--list-item__content _write">{{release.description}} / {{release.label}}</span>
+          </li>
+        </ul>
+        
+      </section>
+      <!-- /section -->
+
+      <!-- section -->
+      <section class="section-list__item">
+        
+        <h2 class="section-list__item--title _write">About</h2>
+        
+        <div ng-repeat="info in qyData.about">
+          <p class="_write">{{info.content}}</p>
+        </div>
+        
+      </section>
+      <!-- /section -->
+      
+    </div>
+    
+  </div>
+  
+  <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="./script/js/typed.js"></script>
+  <script type="text/javascript" src="./script/js/jquery.fn.js"></script>
+  <script type="text/javascript" src="./script/js/angular.fn.js"></script>
+  
+</body>
+</html>

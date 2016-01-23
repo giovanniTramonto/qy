@@ -1,0 +1,72 @@
+{
+  "dates": {
+    "event-1" :  {
+      "date" : "2013-09-07",
+      "title" : "Berlin",
+      "description" : "60 Hz, Ortloff Showcase",
+      "active" : true
+    },
+    "event-2" : {
+      "date" : "2013-08-05",
+      "title" : "Leipzig",
+      "description" : "Westwerk / Pferdehaus",
+      "active" : false
+    },
+    "event-3" : {
+      "date" : "2013-05-13",
+      "title" : "Olganitz",
+      "description" : "Nachtdigital 18",
+      "active" : false
+    }
+    
+  },
+  "bookings": {
+    "item-1": {
+      "address": "booking@ortloff.org",
+      "name": "booking@ortloff.org"
+    },
+    "item-2": {
+      "address": "info@qypsilon.de",
+      "name": "info@qypsilon.de"
+    }
+  },
+  "internet": {
+    "item-1": {
+      "address": "http://facebook.com/qypsilon",
+      "name": "facebook.com/qypsilon"
+    },
+    "item-2": {
+      "address": "http://soundcloud.com/qypsilon",
+      "name": "soundcloud.com/qypsilon"
+    },
+    "item-3": {
+      "address": "http://qypsilon.de",
+      "name": "qypsilon.de"
+    }
+  },
+  "releases" : {
+    "item-1" : {
+      "year" : "2013",
+      "type" : "Vinyl",
+      "title" : "Boytalk EP",
+      "description" : "Macadamia Blue / FDF Soul 02",
+      "label" : "Freund der Familie"
+    },
+    "item-2" : {
+      "year" : "2012",
+      "type" : "Vinyl",
+      "title" : "Talski",
+      "description" : "Helbat Kupfing (Boytalk Remix)",
+      "label" : "Riotvan"
+    }
+  },
+  "about" : {
+    "desc-1": {
+      "content": "Here, in the Business Park Plagwitz Leipzig West, we unite craft tradition with modern and rational manufacturing techniques amidst an industrial setting. Mobility, customer care and the processing of qualitative products are always our first priority."
+    }
+  },
+  "teaser" : {
+    "active" : true,
+    "src" : "https://www.youtube.com/embed/UND89X1H8GI"
+  }
+}
