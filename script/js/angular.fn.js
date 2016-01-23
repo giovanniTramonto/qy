@@ -15,7 +15,7 @@ app.factory('qyData', function( $http ){
 app.controller('qyCtrl', function ($scope, $sce, qyData) {
   qyData.list(function(qyData) {
     $scope.qyData = qyData;
-    var killYtMask = '?rel=0&amp;fs=0&amp;showinfo=0&amp;';
+    var killYtMask = '?rel=0&amp;fs=0&amp;showinfo=0&amp;autoplay=1&amp;loop=1';
     $scope.qyData.teaser.src = $sce.trustAsResourceUrl( qyData.teaser.src + killYtMask );
   });
 });

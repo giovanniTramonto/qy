@@ -143,30 +143,29 @@ body {
 
 .page {
   position: relative;
-  border: 1px solid $color;
+  //border: 1px solid $color;
   width: 100%;
   min-height: 100%;
-  background: $colorBG;
   padding: 50px;
-  &:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    border: 1px solid $color;
-    top: 6px;
-    left: -7px;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    z-index: -1;
-    left: 0;
-    top: 20px; /* yeay, this does the xtra space at the bottom trick*/
-  }
+  //&:before {
+  //  content: "";
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  z-index: -1;
+  //  border: 1px solid $color;
+  //  top: 6px;
+  //  left: -7px;
+  //}
+  //&:after {
+  //  content: "";
+  //  position: absolute;
+  //  width: 1px;
+  //  height: 100%;
+  //  z-index: -1;
+  //  left: 0;
+  //  top: 20px; /* yeay, this does the xtra space at the bottom trick*/
+  //}
 }
 
 .page__header {
@@ -183,10 +182,6 @@ body {
   & + * {
     margin-top: 30px;
   }
-}
-.teaser__frame {
-  position: relative;
-  padding: 0 0 56.25%;
   iframe {
     position: absolute;
     top: 0;
@@ -194,6 +189,10 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+.teaser__frame {
+  position: relative;
+  padding: 0 0 56.25%;
 }
 
 .section-list {
@@ -289,16 +288,29 @@ body {
     width: 50%;
   }
   
+  .teaser__frame {
+    position: fixed;
+    width: 100%;
+    height: 20%;
+    top: 20%;
+    overflow: hidden;
+    iframe {
+      top: -15%;
+    }
+  }
+  
   .teaser {
     display: block;
-    position: absolute;
-    height: 0;
-    left: 50%;
-    width: 50%;
-    z-index: 99;
-    padding: 0 50px 0 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    padding: 0;
     & + * {
-      margin-top: auto;
+      margin-top: 0;
     }
   }
 
