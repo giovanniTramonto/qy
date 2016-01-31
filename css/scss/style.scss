@@ -182,17 +182,11 @@ body {
   & + * {
     margin-top: 30px;
   }
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
 }
-.teaser__frame {
+.teaser__video {
   position: relative;
-  padding: 0 0 56.25%;
+  width: 100%;
+  height: auto;
 }
 
 .section-list {
@@ -288,17 +282,6 @@ body {
     width: 50%;
   }
   
-  .teaser__frame {
-    position: fixed;
-    width: 100%;
-    height: 20%;
-    top: 20%;
-    overflow: hidden;
-    iframe {
-      top: -15%;
-    }
-  }
-  
   .teaser {
     display: block;
     position: fixed;
@@ -309,9 +292,15 @@ body {
     bottom: 0;
     z-index: -2;
     padding: 0;
+    text-align: center;
     & + * {
       margin-top: 0;
     }
+  }
+  
+  .teaser__video {
+    width: auto;
+    height: 100%;
   }
 
 }

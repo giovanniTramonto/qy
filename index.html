@@ -28,9 +28,11 @@
 <body ng-controller="qyCtrl">
 
   <div class="teaser" ng-if="qyData.teaser.active">
-    <div class="teaser__frame">
-      <iframe width="560" height="315" ng-src="{{ qyData.teaser.src }}" src frameborder="0" allowfullscreen></iframe>
-    </div>
+
+      <video class="teaser__video" controls autoplay muted src="./assets/skynet.mp4">
+        <source src="./assets/skynet.mp4" type="video/mp4">
+      </video>
+
   </div>
     
   <div class="page" >
