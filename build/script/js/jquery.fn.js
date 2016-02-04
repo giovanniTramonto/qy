@@ -82,7 +82,7 @@
     setTimeout( setWriter, 200 );
     
   };
-  
+
   /* init */
   $(document).ready(function(){
     

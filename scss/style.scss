@@ -286,6 +286,7 @@ body {
     display: block;
     position: fixed;
     height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
@@ -300,7 +301,12 @@ body {
   
   .teaser__video {
     width: auto;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 
 }
