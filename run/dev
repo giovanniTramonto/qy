@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sass --style compresses --watch css/scss/:css/
+sass --style compresses --watch scss/:build/css/

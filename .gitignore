@@ -36,4 +36,4 @@ node_modules
 .sass-cache
 
 # Assets
-assets
+build/assets
