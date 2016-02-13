@@ -443,7 +443,7 @@ body {
   display: inline;
   white-space: nowrap; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 769px) {
   .page {
     padding: 15px; }
 
@@ -462,7 +462,7 @@ body {
     padding-bottom: 10px; }
   .section-list .section-list__item--list-item__meta {
     display: block; } }
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
   .main {
     width: 50%; }
 
